@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.1.0"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
@@ -53,4 +55,6 @@ group :development, :test, :production do
   gem 'bootstrap3-datetimepicker-rails', '~> 3.0.0'
 end
 
-ruby "2.1.0"
+group :production do
+  gem 'rails_12factor', '~> 0.0.2'
+end
