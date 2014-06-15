@@ -38,7 +38,8 @@ class Auction < ActiveRecord::Base
 
     def add_end_time(date)
       # self.update(time_end: self.time_end.hour = ({hour: 21}))
-      self.update(time_end: date.change(hour: 21))
+      # self.update(time_end: date.change(hour: 21))
+      return date + "  9:00 PM"
     end
 
     def end_auction
