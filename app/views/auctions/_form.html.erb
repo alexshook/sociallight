@@ -22,31 +22,16 @@
       <%= f.label :website %>
       <%= f.url_field :website, class: 'form-control', placeholder: "optional" %>
       <br>
-
       <!-- begin bootstrap datetimepicker -->
       <%= f.label :event_date %>
-      <div class='input-group date' id='datetimepicker1'>
-        <%= f.datetime_field :event_date, class: 'form-control' %>
-        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-      </div>
+      <%= f.datetime_field :event_date, id: 'datetimepicker1', class: 'form-control' %>
       <br>
-
-
       <%= f.label :auction_begin %>
-      <div class='input-group date' id='datetimepicker2'>
-        <%= f.datetime_field :time_begin, class: 'form-control'%>
-        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-      </div>
+      <%= f.datetime_field :time_begin,  id: 'datetimepicker2', class: 'form-control'%>
       <br>
       <%= f.label :auction_end %>
-      <div class='input-group date' id='datetimepicker3'>
-        <%= f.datetime_field :time_end, class: 'form-control', placeholder: 'All auctions end at 9PM on date chosen' %>
-        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-      <!-- end bootstrap datetimepicker -->
-      </div>
+      <%= f.datetime_field :time_end, id: 'datetimepicker3', class: 'form-control', placeholder: 'All auctions end at 9PM on date chosen' %>
       <br>
-
-
       <!-- end bootstrap datetimepicker -->
       <br>
       <%= f.label :num_of_req_bids, "How many people are you looking for?" %>
