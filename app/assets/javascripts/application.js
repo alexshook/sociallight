@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require bootstrap.min
 //= require moment
 //= require bootstrap-datetimepicker
 //= require TimeCircles
@@ -22,5 +21,15 @@
 //= require messages
 //= require users
 //= require main
+//= require underscore
+//= require backbone
+//= require_tree ./views
+//= require_tree ./routers
 //= require_tree ./common
 //= require_self
+
+$().ready(function() {
+  console.log('loaded bro');
+  var AppRouter = new SocialLightRouter();
+  Backbone.history.start();
+});

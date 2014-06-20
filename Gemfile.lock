@@ -26,7 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
-    bootstrap3-datetimepicker-rails (3.0.0)
+    bootstrap3-datetimepicker-rails (3.0.0.1)
       momentjs-rails (~> 2.5.0)
     builder (3.1.4)
     capybara (2.2.1)
@@ -190,7 +190,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap3-datetimepicker-rails (~> 3.0.0)
+  bootstrap3-datetimepicker-rails (~> 3.0.0.1)
   capybara
   coffee-rails (~> 4.0.0)
   dotenv-rails
